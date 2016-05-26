@@ -1,0 +1,5 @@
+timeout: 150
+books_service:
+    url: http://localhost:3000
+    username: foo
+    password: bar
