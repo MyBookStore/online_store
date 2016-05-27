@@ -23,10 +23,10 @@
     <tbody>
     <% @books.each do |book| %>
         <tr>
-          <td><%= book['title'] %></td>
-          <td><%= book['author'] %></td>
-          <td><%= book['price'] || '$400' %></td>
-          <td><%= book['no_of_copies'] >0 ? 'Available' : 'Not Available' %></td>
+          <td><%= book.title %></td>
+          <td><%= book.author %></td>
+          <td><%= book.price || '$400' %></td>
+          <td><%= book.no_of_copies >0 ? 'Available' : 'Not Available' %></td>
         </tr>
     <% end %>
     </tbody>

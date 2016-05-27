@@ -1,7 +1,5 @@
-GIT
-  remote: https://github.com/MyBookStore/books_service_client
-  revision: cf48f49527ea6a7fe51a955456b2f5dd52a70d03
-  tag: v0.1.0
+PATH
+  remote: ../books_service_client
   specs:
     books_service_client (0.1.0)
 
@@ -44,6 +42,10 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -184,6 +186,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors
   books_service_client!
   byebug
   coffee-rails (~> 4.1.0)
