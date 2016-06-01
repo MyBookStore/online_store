@@ -3,3 +3,8 @@ books_service:
     url: http://localhost:3000
     username: foo
     password: bar
+
+customer_service:
+    url: http://localhost:4002
+    username: foo
+    password: bar

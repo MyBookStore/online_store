@@ -1,7 +1,9 @@
 require 'books_service_client'
 
 class BooksController < ApplicationController
+  include ServiceClients
+
   def index
-    @books = BooksServiceClient::Service.new.all_books
+    @books = book_service.all_books
   end
 end

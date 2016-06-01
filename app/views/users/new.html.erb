@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Login Form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<section class="container">
+  <div class="login">
+    <h1>Login to Web App</h1>
+    <form method="post">
+      <p><input type="text" name="name" value="" placeholder="You Name"></p>
+      <p><input type="text" name="email" value="" placeholder="Email"></p>
+      <p><input type="text" name="password" value="" placeholder="enter a password"></p>
+      <p><input type="password" name="password_confirmation" value="" placeholder="re-enterPassword"></p>
+      <%= submit_tag "Login", data: { disable_with: "Please wait.." } %>
+    </form>
+  </div>
+</section>
+</body>
+</html>

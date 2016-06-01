@@ -116,8 +116,6 @@
       <excludeFolder url="file://$MODULE_DIR$/.bundle" />
       <excludeFolder url="file://$MODULE_DIR$/components" />
       <excludeFolder url="file://$MODULE_DIR$/public/system" />
-      <excludeFolder url="file://$MODULE_DIR$/tmp" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/bundle" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -316,6 +314,20 @@
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/concurrent-ruby-1.0.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="customer_service_client (v0.1.0, /Users/simranpal/workspace/Book_store/customer_service_client) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../customer_service_client/bin" />
+          <root url="file://$MODULE_DIR$/../customer_service_client/lib" />
+          <root url="file://$MODULE_DIR$/../customer_service_client/.idea" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../customer_service_client/bin" />
+          <root url="file://$MODULE_DIR$/../customer_service_client/lib" />
+          <root url="file://$MODULE_DIR$/../customer_service_client/.idea" />
         </SOURCES>
       </library>
     </orderEntry>

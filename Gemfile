@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'books_service_client', path:'../books_service_client'
+gem 'customer_service_client', path:'../customer_service_client'
 gem 'rest-client'
 
 # Use ActiveModel has_secure_password
@@ -37,7 +38,6 @@ gem 'rest-client'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug'
-  gem 'byebug'
   gem 'rspec'
   gem 'rspec-rails'
 end

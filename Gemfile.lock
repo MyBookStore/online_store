@@ -3,6 +3,11 @@ PATH
   specs:
     books_service_client (0.1.0)
 
+PATH
+  remote: ../customer_service_client
+  specs:
+    customer_service_client (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -188,8 +193,8 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   books_service_client!
-  byebug
   coffee-rails (~> 4.1.0)
+  customer_service_client!
   jbuilder (~> 2.0)
   jquery-rails
   pry-byebug
