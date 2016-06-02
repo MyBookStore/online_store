@@ -7,10 +7,18 @@ class SessionsController < ApplicationController
 
   def create
     user = customer_service.get_customer({:email => params[:session][:email], :password => params[:session][:password]})
-    if user
-      render :html => 'welcome'
+    if user.valid?
+      render :dash_board
     else
-      render 'invalid params'
+      flash.now[:danger] = 'invalid credentials'
+      render :new
     end
+  end
+
+
+  def destroy
+    session.delete(:user_id)
+    @current_user = nil
+    render :new
   end
 end
