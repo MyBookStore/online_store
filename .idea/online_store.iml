@@ -116,6 +116,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.bundle" />
       <excludeFolder url="file://$MODULE_DIR$/components" />
       <excludeFolder url="file://$MODULE_DIR$/public/system" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bundle" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -200,6 +201,18 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="bcrypt (vbundled(3.1.11), /Users/simranpal/workspace/Book_store/online_store/vendor/bundle/ruby/2.0.0/gems/bcrypt-3.1.11) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/bcrypt-3.1.11/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/bcrypt-3.1.11/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/bcrypt-3.1.11/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/bcrypt-3.1.11/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="better_errors (vbundled(2.1.1), /Users/simranpal/workspace/Book_store/online_store/vendor/bundle/ruby/2.0.0/gems/better_errors-2.1.1) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/better_errors-2.1.1/lib" />
@@ -236,6 +249,22 @@
           <root url="file://$MODULE_DIR$/../books_service_client/pkg" />
           <root url="file://$MODULE_DIR$/../books_service_client/.idea" />
           <root url="file://$MODULE_DIR$/../books_service_client/tasks" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="bootstrap-sass (vbundled(3.2.0.0), /Users/simranpal/workspace/Book_store/online_store/vendor/bundle/ruby/2.0.0/gems/bootstrap-sass-3.2.0.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/bootstrap-sass-3.2.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/bootstrap-sass-3.2.0.0/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/bootstrap-sass-3.2.0.0/assets" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/bootstrap-sass-3.2.0.0/templates" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/bootstrap-sass-3.2.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/bootstrap-sass-3.2.0.0/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/bootstrap-sass-3.2.0.0/assets" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/bootstrap-sass-3.2.0.0/templates" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -454,6 +483,20 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="kgio (vbundled(2.10.0), /Users/simranpal/workspace/Book_store/online_store/vendor/bundle/ruby/2.0.0/gems/kgio-2.10.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/kgio-2.10.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/kgio-2.10.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/kgio-2.10.0/archive" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/kgio-2.10.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/kgio-2.10.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/kgio-2.10.0/archive" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="loofah (vbundled(2.0.3), /Users/simranpal/workspace/Book_store/online_store/vendor/bundle/ruby/2.0.0/gems/loofah-2.0.3) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/loofah-2.0.3/lib" />
@@ -560,6 +603,20 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="order_service_client (v0.1.0, /Users/simranpal/workspace/Book_store/order_service_client) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../order_service_client/bin" />
+          <root url="file://$MODULE_DIR$/../order_service_client/lib" />
+          <root url="file://$MODULE_DIR$/../order_service_client/.idea" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../order_service_client/bin" />
+          <root url="file://$MODULE_DIR$/../order_service_client/lib" />
+          <root url="file://$MODULE_DIR$/../order_service_client/.idea" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="pry (vbundled(0.10.3), /Users/simranpal/workspace/Book_store/online_store/vendor/bundle/ruby/2.0.0/gems/pry-0.10.3) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/pry-0.10.3/bin" />
@@ -656,6 +713,20 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/railties-4.2.6/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/railties-4.2.6/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="raindrops (vbundled(0.16.0), /Users/simranpal/workspace/Book_store/online_store/vendor/bundle/ruby/2.0.0/gems/raindrops-0.16.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/raindrops-0.16.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/raindrops-0.16.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/raindrops-0.16.0/archive" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/raindrops-0.16.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/raindrops-0.16.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/raindrops-0.16.0/archive" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -930,6 +1001,28 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/uglifier-3.0.0/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/uglifier-3.0.0/gemfiles" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="unicorn (vbundled(5.1.0), /Users/simranpal/workspace/Book_store/online_store/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0/t" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0/man" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0/archive" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0/Documentation" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0/t" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0/man" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0/archive" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.0.0/gems/unicorn-5.1.0/Documentation" />
         </SOURCES>
       </library>
     </orderEntry>

@@ -6,8 +6,10 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = customer_service.get_customer({:email => params[:session][:email], :password => params[:session][:password]})
-    if user.valid?
+    user = User.new(customer_service.get_customer({:email => params[:session][:email]}))
+    if user
+      user.authenticate(params[:session][:password])
+      log_in(user)
       render :dash_board
     else
       flash.now[:danger] = 'invalid credentials'

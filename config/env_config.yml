@@ -8,3 +8,8 @@ customer_service:
     url: http://localhost:4002
     username: foo
     password: bar
+
+order_service:
+    url: http://localhost:4003
+    username: foo
+    password: bar

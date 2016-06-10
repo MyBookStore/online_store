@@ -25,7 +25,7 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
-.idea/workspace.xml
+.idea
 
 ## Specific to RubyMotion:
 .dat*
