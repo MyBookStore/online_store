@@ -1,0 +1,49 @@
+<div class="page-header">
+  <h1>Order Description</h1>
+</div>
+
+<h3>Buyer Name : <%= @customer.name %></h3>
+
+<h3>Number of Book : 1</h3>
+<h3>Item Description: </h3><br>
+
+<table class="table">
+  <tbody>
+  <tr>
+    <td>Title</td>
+    <td>:</td>
+    <td><%= @book.title %></td>
+  </tr>
+  <tr>
+    <td>Author</td>
+    <td>:</td>
+    <td><%= @book.author %></td>
+  </tr>
+  <tr>
+    <td>Price</td>
+    <td>:</td>
+    <td><%= @book.price %></td>
+  </tr>
+  </tbody>
+</table>
+
+<h3>Bill</h3>
+
+<ul class="list-group">
+  <li class="list-group-item">Book Price : <%= @book.price %></li>
+  <li class="list-group-item">Service Tax: <%= @book.price * 0.1 %></li>
+  <li class="list-group-item">Shipping Charges: 100</li>
+  <li class="list-group-item">
+    Payable Amount : Rs.<%= @book.price + (@book.price * 0.1) + 100 %>
+    <span class="badge">Cash On Delivery</span>
+  </li>
+</ul>
+
+<br>
+<div class="center-block" style="width:200px;">
+  <%= link_to "Confirm", order_confirm_path(:book_id => @book.id, :customer_id=> @customer.id),:method => :post ,:class => "btn btn-success" %>
+  <%= link_to "Cancel" , "/books", :class=>"btn btn-danger" %>
+</div>
+
+
+

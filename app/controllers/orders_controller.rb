@@ -6,8 +6,25 @@ class OrdersController < ApplicationController
     customer_service.get({name: 'foo'})
   end
 
+  def new
+    @book = books_service.get(params[:book_id])
+    @customer = current_user
+    render :new
+  end
+
   def all
     @orders = order_service.fetch_orders_for_customer(current_user)
     render :all
   end
+
+  def get
+    @order = order_service.get(id:params[:id])
+    render :show
+  end
+
+  def confirm
+    @order = order_service.create(params)
+    render :show
+  end
+
 end

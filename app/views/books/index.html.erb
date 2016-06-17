@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Buy The Books</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,12 +21,20 @@
     </tr>
     </thead>
     <tbody>
+
     <% @books.each do |book| %>
         <tr>
           <td><%= book.title %></td>
           <td><%= book.author %></td>
           <td><%= book.price || '$400' %></td>
-          <td><%= book.no_of_copies >0 ? 'Available' : 'Not Available' %></td>
+          <% if book.no_of_copies >0 %>
+              <td>Available</td>
+              <td>
+                  <a class="btn btn-success" target="_blank" href = "<%= new_order_path(book_id: book.id) %>">BUY NOW</a>
+              </td>
+          <% else %>
+              <td>Not Available</td>
+          <% end %>
         </tr>
     <% end %>
     </tbody>

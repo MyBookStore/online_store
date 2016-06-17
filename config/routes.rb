@@ -1,24 +1,31 @@
 Rails.application.routes.draw do
-  # resources :books , :only => [:index] do
-  # end
+  resources :books, :only => [:index, :show] do
+  end
 
-# resource
-  get 'books' => 'books#all'
+  # resource
   get 'users/new' => 'users#new'
   post 'users/new' => 'users#create'
   get 'user/orders' => 'orders#all'
-  get     ''        => 'users#home'
-  get    'login'   => 'sessions#new'
-  post   'login'   => 'sessions#create'
-  delete 'logout'  => 'sessions#destroy'
-  # get 'users/:id/orders' => ''
+  get '' => 'users#home'
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+  # get 'users/:id/orders' => 'orders/search'
+
+  resources :orders, :only => [:new, :create] do
+    get 'orders/:id' => 'orders#get'
+  end
+
+  post 'orders/confirm' => 'orders#confirm', as: :order_confirm
+
+
   # get 'users/'
-# localhost:4009/users&
-#   resources :users , :only => [:index, create, update] do
-#     users/index
-#     resources :orders [index, show]
-#     users/id/orders/
-#   end
+  # localhost:4009/users&
+  #   resources :users , :only => [:index, create, update] do
+  #     users/index
+  #     resources :orders [index, show]
+  #     users/id/orders/
+  #   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
