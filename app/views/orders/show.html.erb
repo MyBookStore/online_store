@@ -1,1 +1,10 @@
-<%= @order %>
+<ul class="list-group">
+  <li class="list-group-item">Order reference : <%= @order.id %></li>
+  <li class="list-group-item">Status: Confirmed </li>
+  <li class="list-group-item">Expected date of delivery : <%= @order.expected_delivery_date.to_date %></li>
+</ul>
+<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+  <div class="alert alert-info">You can track your order by the given order reference.</div>
+</div>
+
+

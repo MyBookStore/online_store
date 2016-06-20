@@ -17,7 +17,7 @@ class OrdersController < ApplicationController
     render :all
   end
 
-  def get
+  def show
     @order = order_service.get(id:params[:id])
     render :show
   end

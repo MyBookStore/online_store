@@ -12,8 +12,8 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   # get 'users/:id/orders' => 'orders/search'
 
-  resources :orders, :only => [:new, :create] do
-    get 'orders/:id' => 'orders#get'
+  resources :orders, :only => [:new , :show] do
+
   end
 
   post 'orders/confirm' => 'orders#confirm', as: :order_confirm
