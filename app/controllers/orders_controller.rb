@@ -2,9 +2,6 @@ class OrdersController < ApplicationController
   include ServiceClients
   include SessionsHelper
 
-  def current_user
-    customer_service.get({name: 'foo'})
-  end
 
   def new
     @book = books_service.get(params[:book_id])

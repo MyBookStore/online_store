@@ -1,5 +1,7 @@
 class User < DelegateClass(CustomerServiceClient::Resources::User)
+  include ServiceClients
+
   def authenticate password
-    @user_data['password_digest'] == password.digest
+    customer_service.authenticate({customer_id: id, password: password})
   end
 end

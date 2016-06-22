@@ -6,6 +6,6 @@ module SessionsHelper
   end
 
   def current_user
-    @current_user ||= customer_service.get_customer({user: {name:'foo'}})
+    @current_user ||= customer_service.get_by_id(session[:user_id])
   end
 end
